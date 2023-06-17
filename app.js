@@ -5,52 +5,52 @@ document.addEventListener('DOMContentLoaded', () => {
        //need two of each card, to match
        
         {
-            name: 'fries',
-            img: 'images/fries.png'
+            name: 'ball1',
+            img: 'images/ball1.png'
         },
         {
-            name: 'fries',
-            img: 'images/fries.png'
+            name: 'ball1',
+            img: 'images/ball1.png'
         },
         {
-            name: 'cheeseburger',
-            img: 'images/cheeseburger.png'
+            name: 'ball2',
+            img: 'images/ball2.png'
         },
         {
-            name: 'cheeseburger',
-            img: 'images/cheeseburger.png'
+            name: 'ball2',
+            img: 'images/ball2.png'
         },
         {
-            name: 'hotdog',
-            img: 'images/hotdog.png'
+            name: 'beevee',
+            img: 'images/beevee.png'
         },
         {
-            name: 'hotdog',
-            img: 'images/hotdog.png'
+            name: 'beevee',
+            img: 'images/beevee.png'
         },
         {
-            name: 'ice-cream',
-            img: 'images/ice-cream.png'
+            name: 'gumi',
+            img: 'images/gumi.png'
         },
         {
-            name: 'ice-cream',
-            img: 'images/ice-cream.png'
+            name: 'gumi',
+            img: 'images/gumi.png'
         },
         {
-            name: 'milkshake',
-            img: 'images/milkshake.png'
+            name: 'knighteon',
+            img: 'images/knighteon.png'
         },
         {
-            name: 'milkshake',
-            img: 'images/milkshake.png'
+            name: 'knighteon',
+            img: 'images/knighteon.png'
         },
         {
-            name: 'pizza',
-            img: 'images/pizza.png'
+            name: 'koieon',
+            img: 'images/koieon.png'
         },
         {
-            name: 'pizza',
-            img: 'images/pizza.png'
+            name: 'koieon',
+            img: 'images/koieon.png'
         },
     ]
 
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function createBoard() {
         for(let i = 0; i < cardArray.length; i++) {
          const card = document.createElement('img')
-         card.setAttribute('src', 'images/blank.png')
+         card.setAttribute('src', 'images/blank2.png')
 
          //going to set data id to be a random number between 0 and 11 
          //because there are 
@@ -93,8 +93,8 @@ document.addEventListener('DOMContentLoaded', () => {
        const optionTwoId = cardsChosenId[1]
 
         if (optionOneId == optionTwoId) {
-            cards[optionOneId].setAttribute('src', 'images/blank.png')
-            cards[optionTwoId].setAttribute('src', 'images/blank.png')
+            cards[optionOneId].setAttribute('src', 'images/blank2.png')
+            cards[optionTwoId].setAttribute('src', 'images/blank2.png')
             alert('You have clicked the same image!')
         }
          else if (cardsChosen[0] === cardsChosen[1]) {
@@ -106,8 +106,8 @@ document.addEventListener('DOMContentLoaded', () => {
             cardsWon.push(cardsChosen)
         }
          else {
-             cards[optionOneId].setAttribute('src', 'images/blank.png')
-             cards[optionTwoId].setAttribute('src', 'images/blank.png')
+             cards[optionOneId].setAttribute('src', 'images/blank2.png')
+             cards[optionTwoId].setAttribute('src', 'images/blank2.png')
               alert('Sorry, try again')
         }
             //clears the cardschosen and cardschosenid arrays to be used again
